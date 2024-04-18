@@ -34,9 +34,6 @@ text-align: start;
 border-bottom: inset;
 padding-bottom: 5px;
 
-@media (max-width: 500px) {
-    ${(props) => props.onlyWeb && "display: none"}
-}
 `;
 
 export const Td = styled.td`
@@ -44,9 +41,6 @@ export const Td = styled.td`
   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
   width: ${(props) => (props.width ? props.width : "auto")};
 
-  @media (max-width: 500px) {
-    ${(props) => props.onlyWeb && "display: none"}
-  }
 `;
 
 
